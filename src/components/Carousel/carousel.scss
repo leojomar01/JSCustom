@@ -1,0 +1,27 @@
+#carousel{
+   
+    height: 80vh;
+    width: 90vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    .intro{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding:8em 4em;
+        h1{
+            font-size: 3em;
+        }
+
+    }
+    .preview{
+
+        .poly{
+            
+        }
+    }
+}
