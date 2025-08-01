@@ -1,19 +1,22 @@
 import React from 'react'
 import './nav.scss';
-function Nav() {
+
+import { Link } from 'react-router-dom';
+
+function Nav(props) {
+
+  const {location} = props;
+
   return (
     <div id='nav'>
       <ul className="nav">
         <li className="name">Name</li>
-        <li className="home"><a href="/">Home</a></li>
+        <li className="home"><Link to='/' id='home'>Home</Link></li>
         <li className="category">
           <span>Category</span>
           <div className="lists">
-            <a href="/basketball">Basketball</a>
-            <a href="">Volleyball</a>
-            <a href="">T-Shirts</a>
-            <a href="">Polo shirts</a>
-
+            <Link to='/basketball' id='basketball'>Basketball</Link>
+            <Link to='/volleyball' id='volleyball'>Volleyball</Link>
           </div>
         </li>
         <li className='gallery'>Gallery</li>

@@ -1,0 +1,33 @@
+#background{
+    position: absolute;
+    top: 0;
+    transition: .8s;
+    height: 100%;
+      *{
+      }
+    .bg{
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        background-color:#d4d8dd ;
+        top: 0;
+        .poly{
+            height: 120%;
+            position: fixed;
+            top: 0;
+            width: 200vw;
+            left: -100%;
+            clip-path: polygon(50% 0, 200% 0%, 80% 100%, 20% 100%);
+            background-color: #aab7b7;
+            transition: .8s;
+        }
+    }
+}
+#background.active{
+
+    .bg{
+        .poly{
+            left: 0%;
+        }
+    }
+}
