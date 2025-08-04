@@ -3,14 +3,13 @@ import './nav.scss';
 
 import { Link } from 'react-router-dom';
 
-function Nav(props) {
+function Nav() {
 
-  const {location} = props;
 
   return (
     <div id='nav'>
       <ul className="nav">
-        <li className="name">Name</li>
+        <li className="name"><Link to='/' id='home'>JAA</Link></li>
         <li className="home"><Link to='/' id='home'>Home</Link></li>
         <li className="category">
           <span>Category</span>

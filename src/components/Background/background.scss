@@ -17,7 +17,7 @@
             top: 0;
             width: 200vw;
             left: -100%;
-            clip-path: polygon(50% 0, 200% 0%, 80% 100%, 20% 100%);
+            clip-path: polygon(35% 0, 200% 0%, 80% 100%, 20% 100%);
             background-color: #aab7b7;
             transition: .8s;
         }
@@ -27,7 +27,7 @@
 
     .bg{
         .poly{
-            left: 0%;
+            left: -10%;
         }
     }
 }
